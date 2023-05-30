@@ -33,3 +33,7 @@ Potete aggiungere le validazioni in modo da rendere più stabile il vostro gesti
 ## Bonus:
 Validare gli input ricevuti in fase di creazione e modifica, rispondendo con errori chiari e in italiano.
 Utilizzare le Request personalizzate per validare i dati.
+
+***
+
+Mancano: CRUD UPDATE e validazione dei dati
