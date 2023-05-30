@@ -44,6 +44,8 @@
                 <td>
                     <!-- link show -->
                     <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary btn-sm">Details</a>
+                    <!-- link edit -->
+                    <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-primary btn-sm">Edit</a>
                     <!-- delete form -->
                     <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="my-2">
                         @csrf

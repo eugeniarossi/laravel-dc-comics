@@ -1,9 +1,9 @@
 @extends('layout.app')
 
 @section('page.title')
-<div class="container my-4">
-    <a href="{{ route('comics.index') }}" class="btn btn-primary">Back to list</a>
-</div>
+    <div class="container my-4">
+        <a href="{{ route('comics.index') }}" class="btn btn-primary">Back to list</a>
+    </div>
 @endsection
 
 @section('page.main')
