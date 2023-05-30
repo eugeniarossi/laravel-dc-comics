@@ -44,6 +44,12 @@
                 <td>
                     <!-- link show -->
                     <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary btn-sm">Details</a>
+                    <!-- delete form -->
+                    <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="my-2">
+                        @csrf
+                        @method('DELETE')
+                        <input type="submit" value="Delete" class="btn btn-danger btn-sm">
+                    </form>
                 </td>
             </tr>
             @endforeach
