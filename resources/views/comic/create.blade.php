@@ -1,12 +1,13 @@
 @extends('layout.app')
 
 @section('page.title')
-    New Comic
+<div class="container my-4">
+    <a href="{{ route('comics.index') }}" class="btn btn-primary">Back to list</a>
+</div>
 @endsection
 
 @section('page.main')
-    <div class="container py-4">
-        <a href="{{ route('comics.index') }}" class="btn btn-primary mb-4">Back to list</a>
+    <div class="container py-3">
         <h1>New Comic</h1>
         <form action="{{ route('comics.store')}}" method="POST">
             @csrf
