@@ -9,6 +9,7 @@
 @section('page.main')
 
 <div class="container">
+    <a href="{{ route('comics.create') }}" class="btn btn-success">Create new comic</a>
     <table class="table">
         <!-- table head -->
         <thead>
